@@ -29,6 +29,7 @@ public class Role {
     private String name;
 
     @OneToMany(mappedBy = "role")
+    @JoinColumn(foreignKey = @ForeignKey(name = "FK_roleId"))
     private List<User> users;
 
     public Role() {

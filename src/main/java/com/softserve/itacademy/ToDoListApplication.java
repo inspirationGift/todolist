@@ -36,9 +36,8 @@ public class ToDoListApplication implements CommandLineRunner {
         System.out.println("Running Spring Boot Application");
 
 
-
         Role role = roleRepository.getOne(2L);
-        User validUser  = new User();
+        User validUser = new User();
         validUser.setEmail("valid@cv.edu.ua");
         validUser.setFirstName("Valid-Name");
         validUser.setLastName("Valid-Name");
@@ -52,12 +51,10 @@ public class ToDoListApplication implements CommandLineRunner {
         toDo.setOwner(validUser);
         toDo = toDoRepository.save(toDo);
 
-        LocalDate localDate = toDo.getCreatedAt().toLocalDate();
+//        todo
+//        LocalDate localDate = toDo.getCreatedAt().toLocalDate();
         LocalDate today = LocalDate.now();
-        System.out.println(localDate.equals(today));
-
-
-
+//        System.out.println(localDate.equals(today));
     }
 }
 
