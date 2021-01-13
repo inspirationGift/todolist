@@ -9,6 +9,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -23,10 +24,12 @@ public class ToDo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private LocalDate createdAt;
+//    @Column(nullable = false)
+    private LocalDateTime createdAt;
     @NotNull(message = "Not empty title")
+    @Size(min = 3, max = 200)
+    @Column(nullable = false)
     private String title;
-//    private long ownerId;
 
     @OneToMany(mappedBy = "todo")
     private List<Task> tasks;
