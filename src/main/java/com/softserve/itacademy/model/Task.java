@@ -10,13 +10,16 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "tasks")
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    @Enumerated
-    private Priority priority;
-
+    private String priority;
+    @ManyToOne
+    private State state;
+    @ManyToOne
+    private ToDo todo;
 
 }

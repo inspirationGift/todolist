@@ -18,17 +18,27 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "todos")
 public class ToDo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private LocalDate createdAt;
     private String title;
-    private long ownerId;
+//    private long ownerId;
 
+    @OneToMany(mappedBy = "todo")
+    private List<Task> tasks;
 
-    public void setOwner(User owner){
-        this.ownerId = owner.getId();
+    @ManyToOne
+    private User owner;
+
+    @Transient
+    @OneToMany
+    @JoinTable(inverseJoinColumns = @JoinColumn(name = "todo_id"))
+    private List<ToDoCollaborator> toDoCollaborators;
+
+    public void setOwner(User owner) {
+        this.owner = owner;
     }
-
 }
