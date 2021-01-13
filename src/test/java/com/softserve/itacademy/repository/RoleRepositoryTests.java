@@ -28,6 +28,5 @@ public class RoleRepositoryTests {
         role = roleRepository.save(role);
         assertEquals(10, role.getId());
     }
-
 }
 

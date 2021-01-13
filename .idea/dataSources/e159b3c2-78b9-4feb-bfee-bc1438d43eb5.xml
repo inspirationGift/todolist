@@ -796,12 +796,12 @@ false Zulu
     <database id="3" parent="1" name="todolist">
       <ObjectId>16394</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1846</IntrospectionStateNumber>
-      <Relations>sequence|table|18508|18510|1
-sequence|table|18516|18518|1
-sequence|table|18527|18529|1
-sequence|table|18535|18537|1
-sequence|table|18543|18545|1
+      <IntrospectionStateNumber>3962</IntrospectionStateNumber>
+      <Relations>sequence|table|21539|21541|1
+sequence|table|21547|21549|1
+sequence|table|21555|21557|1
+sequence|table|21563|21565|1
+sequence|table|21571|21573|1
 </Relations>
     </database>
     <role id="4" parent="1" name="pg_execute_server_program">
@@ -1007,7 +1007,7 @@ UC/10
 </Acl>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1847</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3963</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="34" parent="3" name="plpgsql">
@@ -61770,71 +61770,76 @@ r/10
       <DefaultClass>1</DefaultClass>
     </operator-class>
     <sequence id="5155" parent="33" name="role_sequence">
-      <ObjectId>18501</ObjectId>
+      <ObjectId>21532</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1805</StateNumber>
+      <StateNumber>3870</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="5156" parent="33" name="states_id_seq">
-      <ObjectId>18508</ObjectId>
+      <ObjectId>21539</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1807</StateNumber>
+      <StateNumber>3872</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="5157" parent="33" name="tasks_id_seq">
-      <ObjectId>18516</ObjectId>
+      <ObjectId>21547</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1808</StateNumber>
+      <StateNumber>3873</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="5158" parent="33" name="todo_collaborator_id_seq">
-      <ObjectId>18527</ObjectId>
+      <ObjectId>21555</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1809</StateNumber>
+      <StateNumber>3874</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="5159" parent="33" name="todos_id_seq">
-      <ObjectId>18535</ObjectId>
+      <ObjectId>21563</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1810</StateNumber>
+      <StateNumber>3875</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="5160" parent="33" name="users_id_seq">
-      <ObjectId>18543</ObjectId>
+      <ObjectId>21571</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1811</StateNumber>
+      <StateNumber>3876</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <table id="5161" parent="33" name="roles">
-      <ObjectId>18503</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>1818</StateNumber>
-    </table>
-    <table id="5162" parent="33" name="states">
-      <ObjectId>18510</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>1813</StateNumber>
-    </table>
-    <table id="5163" parent="33" name="tasks">
-      <ObjectId>18518</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>1813</StateNumber>
-    </table>
-    <table id="5164" parent="33" name="todo_collaborator">
-      <ObjectId>18529</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>1815</StateNumber>
-    </table>
-    <table id="5165" parent="33" name="todos">
-      <ObjectId>18537</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>1814</StateNumber>
-    </table>
-    <table id="5166" parent="33" name="users">
-      <ObjectId>18545</ObjectId>
+      <ObjectId>21534</ObjectId>
       <Outdated>1</Outdated>
       <Owner>postgres</Owner>
-      <StateNumber>1815</StateNumber>
+      <StateNumber>3884</StateNumber>
+    </table>
+    <table id="5162" parent="33" name="states">
+      <ObjectId>21541</ObjectId>
+      <Outdated>1</Outdated>
+      <Owner>postgres</Owner>
+      <StateNumber>3879</StateNumber>
+    </table>
+    <table id="5163" parent="33" name="tasks">
+      <ObjectId>21549</ObjectId>
+      <Outdated>1</Outdated>
+      <Owner>postgres</Owner>
+      <StateNumber>3879</StateNumber>
+    </table>
+    <table id="5164" parent="33" name="todo_collaborator">
+      <ObjectId>21557</ObjectId>
+      <Outdated>1</Outdated>
+      <Owner>postgres</Owner>
+      <StateNumber>3881</StateNumber>
+    </table>
+    <table id="5165" parent="33" name="todos">
+      <ObjectId>21565</ObjectId>
+      <Outdated>1</Outdated>
+      <Owner>postgres</Owner>
+      <StateNumber>3880</StateNumber>
+    </table>
+    <table id="5166" parent="33" name="users">
+      <ObjectId>21573</ObjectId>
+      <Outdated>1</Outdated>
+      <Owner>postgres</Owner>
+      <StateNumber>3881</StateNumber>
     </table>
     <check id="5167" parent="46" name="cardinal_number_domain_check">
       <ObjectId>13172</ObjectId>
@@ -109810,19 +109815,19 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1806</StateNumber>
+      <StateNumber>3871</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="16128" parent="5161" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1806</StateNumber>
+      <StateNumber>3871</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="16129" parent="5161" name="roles_pkey">
-      <ObjectId>18506</ObjectId>
-      <StateNumber>1806</StateNumber>
+      <ObjectId>21537</ObjectId>
+      <StateNumber>3871</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -109831,8 +109836,8 @@ umserver</ColNames>
       <ClassIds>3124</ClassIds>
     </index>
     <index id="16130" parent="5161" name="uk_ofx66keruapi6vyqpv6f2or37">
-      <ObjectId>18554</ObjectId>
-      <StateNumber>1812</StateNumber>
+      <ObjectId>21582</ObjectId>
+      <StateNumber>3877</StateNumber>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
@@ -109841,15 +109846,15 @@ umserver</ColNames>
       <ClassIds>3126</ClassIds>
     </index>
     <key id="16131" parent="5161" name="roles_pkey">
-      <ObjectId>18507</ObjectId>
-      <StateNumber>1806</StateNumber>
+      <ObjectId>21538</ObjectId>
+      <StateNumber>3871</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>roles_pkey</UnderlyingIndexName>
     </key>
     <key id="16132" parent="5161" name="uk_ofx66keruapi6vyqpv6f2or37">
-      <ObjectId>18555</ObjectId>
-      <StateNumber>1812</StateNumber>
+      <ObjectId>21583</ObjectId>
+      <StateNumber>3877</StateNumber>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>uk_ofx66keruapi6vyqpv6f2or37</UnderlyingIndexName>
     </key>
@@ -109857,19 +109862,19 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1807</StateNumber>
+      <StateNumber>3872</StateNumber>
       <DefaultExpression>nextval(&apos;states_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <column id="16134" parent="5162" name="name">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>1807</StateNumber>
+      <DataType>varchar(20)|0s</DataType>
+      <StateNumber>3872</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="16135" parent="5162" name="states_pkey">
-      <ObjectId>18514</ObjectId>
-      <StateNumber>1807</StateNumber>
+      <ObjectId>21545</ObjectId>
+      <StateNumber>3872</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -109878,8 +109883,8 @@ umserver</ColNames>
       <ClassIds>3124</ClassIds>
     </index>
     <key id="16136" parent="5162" name="states_pkey">
-      <ObjectId>18515</ObjectId>
-      <StateNumber>1807</StateNumber>
+      <ObjectId>21546</ObjectId>
+      <StateNumber>3872</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>states_pkey</UnderlyingIndexName>
@@ -109888,37 +109893,37 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1808</StateNumber>
+      <StateNumber>3873</StateNumber>
       <DefaultExpression>nextval(&apos;tasks_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <column id="16138" parent="5163" name="name">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>1808</StateNumber>
+      <DataType>varchar(200)|0s</DataType>
+      <StateNumber>3873</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="16139" parent="5163" name="priority">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>1808</StateNumber>
+      <StateNumber>3873</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="16140" parent="5163" name="state_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>1808</StateNumber>
+      <StateNumber>3873</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="16141" parent="5163" name="todo_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>1808</StateNumber>
+      <StateNumber>3873</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="16142" parent="5163" name="tasks_pkey">
-      <ObjectId>18525</ObjectId>
-      <StateNumber>1808</StateNumber>
+      <ObjectId>21553</ObjectId>
+      <StateNumber>3873</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -109927,27 +109932,27 @@ umserver</ColNames>
       <ClassIds>3124</ClassIds>
     </index>
     <key id="16143" parent="5163" name="tasks_pkey">
-      <ObjectId>18526</ObjectId>
-      <StateNumber>1808</StateNumber>
+      <ObjectId>21554</ObjectId>
+      <StateNumber>3873</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>tasks_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="16144" parent="5163" name="fkpm8o7r3k2d06eqaehxvdddfah">
-      <ObjectId>18556</ObjectId>
-      <StateNumber>1813</StateNumber>
+      <ObjectId>21586</ObjectId>
+      <StateNumber>3879</StateNumber>
       <ColNames>state_id</ColNames>
-      <RefTableId>18510</RefTableId>
+      <RefTableId>21541</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>states</RefTableName>
       <RefKeyName>states_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="16145" parent="5163" name="fkndwtm2u4rdwdvsox5x3ulo80p">
-      <ObjectId>18561</ObjectId>
-      <StateNumber>1814</StateNumber>
+      <ObjectId>21591</ObjectId>
+      <StateNumber>3880</StateNumber>
       <ColNames>todo_id</ColNames>
-      <RefTableId>18537</RefTableId>
+      <RefTableId>21565</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>todos</RefTableName>
       <RefKeyName>todos_pkey</RefKeyName>
@@ -109957,25 +109962,25 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1809</StateNumber>
+      <StateNumber>3874</StateNumber>
       <DefaultExpression>nextval(&apos;todo_collaborator_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <column id="16147" parent="5164" name="collaborator_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>1809</StateNumber>
+      <StateNumber>3874</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="16148" parent="5164" name="todo_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>1809</StateNumber>
+      <StateNumber>3874</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="16149" parent="5164" name="todo_collaborator_pkey">
-      <ObjectId>18533</ObjectId>
-      <StateNumber>1809</StateNumber>
+      <ObjectId>21561</ObjectId>
+      <StateNumber>3874</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -109984,27 +109989,27 @@ umserver</ColNames>
       <ClassIds>3124</ClassIds>
     </index>
     <key id="16150" parent="5164" name="todo_collaborator_pkey">
-      <ObjectId>18534</ObjectId>
-      <StateNumber>1809</StateNumber>
+      <ObjectId>21562</ObjectId>
+      <StateNumber>3874</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>todo_collaborator_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="16151" parent="5164" name="fkgw0k0aw4m2ovpyfl30h2wmoxd">
-      <ObjectId>18566</ObjectId>
-      <StateNumber>1815</StateNumber>
+      <ObjectId>21596</ObjectId>
+      <StateNumber>3881</StateNumber>
       <ColNames>collaborator_id</ColNames>
-      <RefTableId>18545</RefTableId>
+      <RefTableId>21573</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>users</RefTableName>
       <RefKeyName>users_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="16152" parent="5164" name="fk2an385byaawdel6f0svpt1igp">
-      <ObjectId>18571</ObjectId>
-      <StateNumber>1816</StateNumber>
+      <ObjectId>21601</ObjectId>
+      <StateNumber>3882</StateNumber>
       <ColNames>todo_id</ColNames>
-      <RefTableId>18537</RefTableId>
+      <RefTableId>21565</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>todos</RefTableName>
       <RefKeyName>todos_pkey</RefKeyName>
@@ -110014,31 +110019,32 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1810</StateNumber>
+      <StateNumber>3875</StateNumber>
       <DefaultExpression>nextval(&apos;todos_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <column id="16154" parent="5165" name="created_at">
       <Position>2</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>1810</StateNumber>
+      <StateNumber>3875</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="16155" parent="5165" name="title">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>1810</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>3875</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="16156" parent="5165" name="owner_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>1810</StateNumber>
+      <StateNumber>3875</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="16157" parent="5165" name="todos_pkey">
-      <ObjectId>18541</ObjectId>
-      <StateNumber>1810</StateNumber>
+      <ObjectId>21569</ObjectId>
+      <StateNumber>3875</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -110047,17 +110053,17 @@ umserver</ColNames>
       <ClassIds>3124</ClassIds>
     </index>
     <key id="16158" parent="5165" name="todos_pkey">
-      <ObjectId>18542</ObjectId>
-      <StateNumber>1810</StateNumber>
+      <ObjectId>21570</ObjectId>
+      <StateNumber>3875</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>todos_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="16159" parent="5165" name="fkk1l4pem9qwnplbmfwhbsjoccs">
-      <ObjectId>18576</ObjectId>
-      <StateNumber>1817</StateNumber>
+      <ObjectId>21606</ObjectId>
+      <StateNumber>3883</StateNumber>
       <ColNames>owner_id</ColNames>
-      <RefTableId>18545</RefTableId>
+      <RefTableId>21573</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>users</RefTableName>
       <RefKeyName>users_pkey</RefKeyName>
@@ -110067,46 +110073,44 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1811</StateNumber>
+      <StateNumber>3876</StateNumber>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <column id="16161" parent="5166" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>1811</StateNumber>
+      <StateNumber>3876</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="16162" parent="5166" name="first_name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1811</StateNumber>
+      <StateNumber>3876</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="16163" parent="5166" name="last_name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1811</StateNumber>
+      <StateNumber>3876</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="16164" parent="5166" name="password">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>1811</StateNumber>
+      <StateNumber>3876</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="16165" parent="5166" name="role_id">
       <Position>6</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1811</StateNumber>
+      <StateNumber>3876</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="16166" parent="5166" name="users_pkey">
-      <ObjectId>18552</ObjectId>
-      <StateNumber>1811</StateNumber>
+      <ObjectId>21580</ObjectId>
+      <StateNumber>3876</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -110114,18 +110118,34 @@ umserver</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="16167" parent="5166" name="users_pkey">
-      <ObjectId>18553</ObjectId>
-      <StateNumber>1811</StateNumber>
+    <index id="16167" parent="5166" name="uk_6dotkott2kjsp8vw4d0m25fb7">
+      <ObjectId>21584</ObjectId>
+      <StateNumber>3878</StateNumber>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <key id="16168" parent="5166" name="users_pkey">
+      <ObjectId>21581</ObjectId>
+      <StateNumber>3876</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="16168" parent="5166" name="fkp56c1712k691lhsyewcssf40f">
-      <ObjectId>18581</ObjectId>
-      <StateNumber>1818</StateNumber>
+    <key id="16169" parent="5166" name="uk_6dotkott2kjsp8vw4d0m25fb7">
+      <ObjectId>21585</ObjectId>
+      <StateNumber>3878</StateNumber>
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>uk_6dotkott2kjsp8vw4d0m25fb7</UnderlyingIndexName>
+    </key>
+    <foreign-key id="16170" parent="5166" name="fkp56c1712k691lhsyewcssf40f">
+      <ObjectId>21611</ObjectId>
+      <StateNumber>3884</StateNumber>
       <ColNames>role_id</ColNames>
-      <RefTableId>18503</RefTableId>
+      <RefTableId>21534</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>roles</RefTableName>
       <RefKeyName>roles_pkey</RefKeyName>
