@@ -33,7 +33,7 @@ public class User {
     @Column(nullable = false)
     private String lastName;
     @NotBlank(message = "The password cannot be empty")
-//    @Pattern(regexp = "[a..z]")
+    @Pattern(regexp = "(?=^.{8,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$")
     private String password;
 
     @NotNull

@@ -24,6 +24,7 @@ public class ToDo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private LocalDate createdAt;
+    @NotNull(message = "Not empty title")
     private String title;
 //    private long ownerId;
 
